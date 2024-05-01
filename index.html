@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS - Debrief</title>
+    <title>CSS - Debrief - by Klaus | Kun | Keturah </title>
+    <link rel="stylesheet" href="./resources/style.css">
 </head>
 
 <body>
     <nav id="nav-bar">
-        <img class="sea-scape" src="" alt="sea-scape">
+        <img class="sea-scape" src="./resources/scape.png" alt="sea-scape">
         <div class="right-nav">
             <a href="#">Home</a>
             <a href="#">About</a>
@@ -58,7 +59,12 @@
                     <td>Back End</td>
                 </tr>
                 <tr>
-                    <td class="blank-cell">Tech Used</td>
+                    <td class="blank-cell" rowspan="2">Tech Used</td>
+                    <td>HTML, CSS, JS</td>
+                    <td>PHP, Python</td>
+                </tr>
+                <tr>
+                    <!-- <td class="blank-cell">Tech Used</td> -->
                     <td>HTML, CSS, JS</td>
                     <td>PHP, Python</td>
                 </tr>
@@ -71,16 +77,18 @@
             <h3>Form Heading</h3>
             <form action="#POST">
                 <label for="name">Name:</label>
-                <input type="text" name="name" id="input-box">
-
+                <input type="text" name="name" id="input-box" required
+                        title="Input your name">
+                <br>
                 <label for="email">Email:</label>
-                <input type="email" name="email" id="input-box">
-
+                <input type="email" name="email" id="input-box" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required
+                        title="Input your email">
+                <br>
                 <label for="pwd">Password:</label>
-                <input type="password" id="pwd" name="pwd"> <!-- ADD YOUR PATTERN AND TITLE ATTRIBUTES HERE-->
+                <input type="password" id="pwd" name="pwd" required
+                        title="Input your password"> <!-- ADD YOUR PATTERN AND TITLE ATTRIBUTES HERE-->
                 <br>
                 <button type="submit">Submit</button>
-
             </form>
         </div>
 
